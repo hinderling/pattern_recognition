@@ -6,3 +6,7 @@
 #  • Average accuracy during cross-validation
 #  • Accuracy on the test set with optimized parameters
 
+# Implementation:
+# https://scikit-learn.org/stable/modules/svm.html
+
+
