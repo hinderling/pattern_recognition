@@ -90,5 +90,20 @@ You can see on the figure below that after 6 epochs, the accuracy of the model d
 
 ![](figures/Model7.png)
 
+## Permutated MNIST
+### CNN
+For this model we chose the same optimal parameters as we did for the MNIST dataset.
+The figure below shows the learning curve and test accuracy on the permutated MNIST dataset.
+
+![](figures/CNNPermutatedMNIST.png)
+
+We can see that the accuracys between the two sets do not differ greatly. 
+Even though the image looks very noisy for a human, the CNN does not care about how a human recognises a image. The permutation is held constant within a session.
+We think thats because it is no more easy or difficult for the CNN model to learn MNIST versus permuted MNIST as it does exploit the  spatial relationship between the pixels.
+
+### MLP
+
+
+
 
 
