@@ -1,0 +1,20 @@
+"C:\T O O L S\sciencetools\Anaconda\python.exe" "C:/U N I B E/MasterJ1/year 2/Patrec/exercises/02_MNIST/SMV/sndbx.py"
+start importing training data... done importing training data
+start importing testing data... done importing testing
+shape train: (20000, 784)
+shape test: (2000, 784)
+
+rbf Kernel selected
+Best Parameters: {'C': 1, 'gamma': 0.025}
+
+[{'C': 0.1, 'gamma': 0.025}, {'C': 0.1, 'gamma': 0.05}, {'C': 0.1, 'gamma': 0.075}, {'C': 0.1, 'gamma': 0.1}, {'C': 0.5, 'gamma': 0.025}, {'C': 0.5, 'gamma': 0.05}, {'C': 0.5, 'gamma': 0.075}, {'C': 0.5, 'gamma': 0.1}, {'C': 1, 'gamma': 0.025}, {'C': 1, 'gamma': 0.05}, {'C': 1, 'gamma': 0.075}, {'C': 1, 'gamma': 0.1}]
+
+[0.9438  0.91625 0.73245 0.3896  0.9678  0.9643  0.92645 0.79715 0.9733
+ 0.9713  0.95365 0.9002 ]
+
+selected model: {'C': 1, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 0.025, 'kernel': 'rbf', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+### score: 0.964
+
+time: 269.2min
+
+Process finished with exit code 0
