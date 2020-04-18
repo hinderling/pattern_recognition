@@ -74,3 +74,13 @@ Compared to the examples above, the weights here seem extremely unstructured, no
 
 
 ## CNN
+### Introduction
+For this task we trained and tested a convolution neural network (CNN) with the full MNIST dataset. The network we create composes of three convolutional layers and one fully connected linear layer for classification.
+We tryed different values for the following parameters:
+
+batch_sizes = [50, 100, 500]
+learning_rates = [0.001, 0.01, 0.1]
+negative_slope of activation function:[0.01, 0.1]
+
+We yielded the best accuracys for the testset with the lowest learning rate of 0.001. The batch size did not matter what so ever. We chose to run each model for 12 epochs. In most cases after 4-6 epochs the accuracy started to go down for the first time and then stayed at that percentage for the rest of epochs. that indicated, that our model is not overtraining with 3 convolutional layers.
+![]
