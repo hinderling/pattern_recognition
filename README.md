@@ -102,7 +102,7 @@ We then performed the random initialization 10 times with our optimal parameters
 The model below achieved an accuracy of 98.5% for the testset and for the trainingset an accuracy of 99.56%.
 You can see on the figure below that after 4 epochs, the accuracy of the model does not change significantly anymore. 
 
-![](figures/Model7.png)
+![](figures/Model10.png)
 
 ## Permutated MNIST
 ### CNN
