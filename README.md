@@ -89,18 +89,18 @@ The MLPs works train the same on non permutated vs. permutated data! Only when t
 
 ## CNN
 ### Introduction
-For this task we trained and tested a convolution neural network (CNN) with the full MNIST dataset. The network we create composes of three convolutional layers and one fully connected linear layer for classification.
-We tryed different values for the following parameters:
+For this task we trained and tested a convolution neural network (CNN) with the full MNIST dataset. The network we create is composed of three convolutional layers and one fully connected linear layer for classification.
+We tried different values for the following parameters:
 
 batch_sizes = [50, 100, 500]
 learning_rates = [0.001, 0.01, 0.1]
 negative_slope of activation function:[0.01, 0.1]
 
-We yielded the best accuracys for the testset with the lowest learning rate of 0.001. The batch size did not matter what so ever. We chose to run each model for 12 epochs. In most cases after 4-6 epochs the accuracy started to go down for the first time and then stayed at that percentage for the rest of epochs. that indicated, that our model is not overtraining with 3 convolutional layers.
+We yielded the best accuracys for the testset with the lowest learning rate of 0.001 and with the negative slope of the activation function changed to 0.1. The batch size did not matter what so ever. We chose to run each model for 12 epochs; In most cases the accuracy (test set) decreased for the first time after 4-6 epochs, and stayed at roughly the same percentage thereafter. That indicated, that our model is not overtraining with 3 convolutional layers.
 
-We then performed the random initialization 10 times with our optimal parameters and choose the best model for the validation of the testset.
-This model below achieved a accuracy of 98.37% for the testset and for the trainingset an accuracy of 99.6%.
-You can see on the figure below that after 6 epochs, the accuracy of the model does not increase significantly anymore. 
+We then performed the random initialization 10 times with our optimal parameters and chose the best model using the validation with the testset.
+The model below achieved an accuracy of 98.5% for the testset and for the trainingset an accuracy of 99.56%.
+You can see on the figure below that after 4 epochs, the accuracy of the model does not change significantly anymore. 
 
 ![](figures/Model7.png)
 
@@ -111,9 +111,9 @@ The figure below shows the learning curve and test accuracy on the permutated MN
 
 ![](figures/CNNPermutatedMNIST.png)
 
-We can see that the accuracys between the two sets do not differ greatly. 
-Even though the image looks very noisy for a human, the CNN does not care about how a human recognises a image. The permutation is held constant within a session.
-We think thats because it is no more easy or difficult for the CNN model to learn MNIST versus permuted MNIST as it does exploit the  spatial relationship between the pixels.
+We can see that the accuracies between the two sets do not differ greatly. 
+Even though the permutated images look very noisy for a human, it does not impact the performance of the CNN very much;  The permutation is held constant within a session.
+We think that the difficulty for the CNN model to learn MNIST versus permuted MNIST does not change as the CNN does exploit the  spatial relationship between the pixels.
 
 ### MLP
 
