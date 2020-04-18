@@ -72,5 +72,19 @@ Compared to the examples above, the weights here seem extremely unstructured, no
 
 ![](figures_report/hidden_neurons_shuffled_data.png)
 
+Let's see if it depends on wether we shuffle the input data (order of pixels within each image) or the labels:
+![](figures_report/comparison_shuffle_types.png)
+
+We can see that shuffling the labels has a stronger impact than shuffling the data. We can argue that there is still information left in shuffled data, e.g. a '8' has always more black pixels than a '1', which allows for some generalization. 
+
+Comparing an MLP trained on a shuffled dataset versus on a true dataset, leads to the same results illustrated before, except that the MLP trained on shuffled data reaches a good test score quicker than an MLP trained on shuffled labels: 
+![](figures_report/true_vs_data_shuffled.png)
+But no matter how good the training score and loss, it will perform poorly on the test dataset.
+
+We produced our own shuffled dataset using the `shuffle()` function provided by `sklearn.utils`. Example of how to scramble the training set labels: `y_train = shuffle(y_train, random_state=0)`. When scrampling multidimensional arrays, it is important to not fix the `random_state` argument, else all rows get scrambled in the same way - a function which the MLP can easily deal with!
+In this plot red curves have been trained on a dataset shuffled non-randomly, meaning each image has the same permuation function applied.
+![](figures_report/non-random_shuffle.png)
+
+The MLPs works train the same on non permutated vs. permutated data! Only when testing both on a non-permutated dataset the difference becomes visible, and the MLP trained on shuffled data performs extremely poor.
 
 ## CNN

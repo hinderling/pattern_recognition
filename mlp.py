@@ -127,15 +127,19 @@ if (run):
 
 
 ############### SUCESSRATE / ITERATIONS ###################
-
-
 run = 1
 if (run):
     #initialize the classifier
     #Only run one iteration at a time, and 
     # use either: warm_start = True, or partial_fit
 
-    y_train = shuffle(y_train, random_state=0)
+    #   either shuffle the labels...
+    #y_train = shuffle(y_train, random_state=0)
+
+    #   ...or shuffle the data
+    X_train = np.apply_along_axis(shuffle,1,X_train)
+    #X_test = np.apply_along_axis(shuffle,1,X_test,random_state=0)
+
     mlp = MLPClassifier(hidden_layer_sizes=(40,), max_iter=1, alpha=1e-4,
                    solver='sgd', verbose=10, random_state=1,
                     learning_rate_init=.01, warm_start=True)
