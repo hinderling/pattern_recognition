@@ -57,16 +57,15 @@ def main(mode, n_train_samples, n_test_samples):
         clf_grid = GridSearchCV(svc_lin, param_grid, cv=4, iid=True)
         print("done building grid search classifier")
 
-
         # Train the classifier on the training data (for each possible C)
         print("start fitting...", end=" ")
         clf_grid.fit(X_train, y_train)
         print("done fitting")
-
+        
+        # Collect 
         dictionary_parameters = clf_grid.cv_results_["params"]
         list_input_C = [entry["C"] for entry in dictionary_parameters]
         list_output_scores = clf_grid.cv_results_["mean_test_score"]
-
         best_parameters = clf_grid.best_params_
 
         # Print results
