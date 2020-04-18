@@ -81,11 +81,11 @@ Comparing an MLP trained on a shuffled dataset versus on a true dataset, leads t
 ![](figures_report/true_vs_data_shuffled.png)
 But no matter how good the training score and loss, it will perform poorly on the test dataset.
 
-We produced our own shuffled dataset using the `shuffle()` function provided by `sklearn.utils`. Example of how to scramble the training set labels: `y_train = shuffle(y_train, random_state=0)`. When scrampling multidimensional arrays, it is important to not fix the `random_state` argument, else all rows get scrambled in the same way - a function which the MLP can easily deal with!
+We produced our own shuffled dataset using the `shuffle()` function provided by `sklearn.utils`. Example of how to scramble the training set labels: `y_train = shuffle(y_train, random_state=0)`. When scrambling multidimensional arrays, it is important to not fix the `random_state` argument, else all rows get scrambled in the same way - a function which the MLP can easily deal with! While we humans cannot recognize any numbers in permutated images, the MLP can learn to recognice them exactly the same as non-permutated numbers. If we shuffle the input pixels, we could just permutate all their corresponding  weights and biases with them, and we don't even have to change the rest of the MLP.
 In this plot red curves have been trained on a dataset shuffled non-randomly, meaning each image has the same permuation function applied.
 ![](figures_report/non-random_shuffle.png)
 
-The MLPs works train the same on non permutated vs. permutated data! Only when testing both on a non-permutated dataset the difference becomes visible, and the MLP trained on shuffled data performs extremely poor.
+The MLPs train the same on non-ermutated vs. permutated data! Only when testing both on a non-permutated dataset the difference becomes visible, and the MLP trained on shuffled data obviously performs extremely poor. Tested on data permutated in the same way, it achieves the same accuracy as the non-scrambled MLP (not depicted in plot).
 
 ## CNN
 ### Introduction
@@ -102,7 +102,7 @@ We then performed the random initialization 10 times with our optimal parameters
 The model below achieved an accuracy of 98.5% for the testset and for the trainingset an accuracy of 99.56%.
 You can see on the figure below that after 4 epochs, the accuracy of the model does not change significantly anymore. 
 
-![](figures/Model10.png)
+![](figures/Model7.png)
 
 ## Permutated MNIST
 ### CNN
