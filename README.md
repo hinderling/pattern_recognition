@@ -83,4 +83,12 @@ learning_rates = [0.001, 0.01, 0.1]
 negative_slope of activation function:[0.01, 0.1]
 
 We yielded the best accuracys for the testset with the lowest learning rate of 0.001. The batch size did not matter what so ever. We chose to run each model for 12 epochs. In most cases after 4-6 epochs the accuracy started to go down for the first time and then stayed at that percentage for the rest of epochs. that indicated, that our model is not overtraining with 3 convolutional layers.
+
+We then performed the random initialization 10 times with our optimal parameters and choose the best model for the validation of the testset.
+This model below achieved a accuracy of 98.37% for the testset and for the trainingset an accuracy of 99.6%.
+You can see on the figure below that after 6 epochs, the accuracy of the model does not increase significantly anymore. 
+
 ![](figures/Model7.png)
+
+
+
