@@ -7,11 +7,9 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 import torchvision
-import torchvision.transforms as transforms
 from torchvision.transforms import Compose, ToTensor, Normalize, Grayscale
 import numpy as np
 import matplotlib.pyplot as plt
-from sklearn.utils import shuffle
 
 class Flatten(nn.Module): #nn.Module is ancestor
     """
