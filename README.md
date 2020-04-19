@@ -16,6 +16,19 @@
 
 ## Report
 ## SVM
+The Support Vector Machine is a discriminative classifier that tries to set up boudary hyperplanes between different classes using support vectors. The goal of this exercise was to build a SVM and apply it to the MNIST dataset, which should allow for more accurate classification compared to our last exercise using this dataset (...if properly optimized). 
+
+The implementation of this was handled using the sklearn library, which not only contains various different versions of SVM classifiers, but also offers tools for Cross validation and more importantly; a parameter grid-search function, which we used to experimentally optimize our parameters.
+
+### Linear Kernel
+We tested our implementation with a linear kernel and various different C's
+![Linear Kernel SVM](Results/SVM/Linear Kernel/PicLinearFULLV1.png)
+
+
+
+
+
+
 
 ## MLP: Multilayer perceptron
 ### Introduction
