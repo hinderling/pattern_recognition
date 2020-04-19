@@ -28,8 +28,8 @@ Specially apparent here was the close correlation between the amount of training
 
 ### RBF Kernel
 We tested our implementation with a RBF Kernel and various different C's and Gamma's.
-![](Results/SVM/RBF Kernel/PicRBF20k2kV4.png)
-The best combination of C and Gamma we were able to find was: C = 1.5 / gamma = 0.03 and gave us a total test score of: [],while giving a mean accuracy value after cross validation of: []
+![RBF Grid-Search](figures_report/PicRBF20k2kV4.png)
+The best combination of C and Gamma we were able to find was: C = 1.5 / gamma = 0.03 and gave us a total test score of: 0.9852, while giving a mean accuracy value after cross validation of: 0.98265
 Unfortunately we were unable to run this implemenatation on the whole dataset, and used only 20,000 training images on a set of 2000 test images during the Grid-search phase of this experiment. This will impact our final result here because we probably didn't optimally weigh the errors in our full training set of 60,000 images. This was done due to the absolutely unreasonable (and therefore unknown) amount of time it takes to perform a 2D grid-search on the full dataset with our implementation, by reducing the dataset we were then able to test a bunch of parameter-ranges for the final implementation on the full dataset.
 
 ## MLP: Multilayer perceptron
