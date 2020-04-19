@@ -22,7 +22,7 @@ The implementation of this was handled using the sklearn library, which not only
 
 ### Linear Kernel
 We tested our implementation with a linear kernel and various different C's
-![Linear Kernel SVM](Results/SVM/Linear Kernel/PicLinearFULLV1.png)
+![](Results/SVM/Linear Kernel/PicLinearFULLV1.png)
 
 
 
