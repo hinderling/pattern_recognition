@@ -21,14 +21,16 @@ The Support Vector Machine is a discriminative classifier that tries to set up b
 The implementation of this was handled using the sklearn library, which not only contains various different versions of SVM classifiers, but also offers tools for Cross validation and more importantly; a parameter grid-search function, which we used to experimentally optimize our parameters.
 
 ### Linear Kernel
-We tested our implementation with a linear kernel and various different C's
+We tested our implementation with a linear Kernel and various different C's
 ![](Results/SVM/Linear Kernel/PicLinearFULLV1.png)
+The best C we were able to find was C = 0.05 and gave us a total test score of: [],while giving a mean accuracy value after cross validation of: []
+Specially apparent here was the close correlation between the amount of training data given and the C-value that netted the best result - the more data we give the classifier, the more weigh we need to give the errors.
 
-
-
-
-
-
+### RBF Kernel
+We tested our implementation with a RBF Kernel and various different C's and Gamma's.
+![](Results/SVM/RBF Kernel/PicRBF20k2kV4.png)
+The best combination of C and Gamma we were able to find was: C = 1.5 / gamma = 0.03 and gave us a total test score of: [],while giving a mean accuracy value after cross validation of: []
+Unfortunately we were unable to run this implemenatation on the whole dataset, and used only 20,000 training images on a set of 2000 test images during the Grid-search phase of this experiment. This will impact our final result here because we probably didn't optimally weigh the errors in our full training set of 60,000 images. This was done due to the absolutely unreasonable (and therefore unknown) amount of time it takes to perform a 2D grid-search on the full dataset with our implementation, by reducing the dataset we were then able to test a bunch of parameter-ranges for the final implementation on the full dataset.
 
 ## MLP: Multilayer perceptron
 ### Introduction
