@@ -16,6 +16,28 @@
 
 ## Report
 ## SVM
+The Support Vector Machine is a discriminative classifier that tries to set up boudary hyperplanes between different classes using support vectors. The goal of this exercise was to build a SVM and apply it to the MNIST dataset, which should allow for more accurate classification compared to our last exercise using this dataset (...if properly optimized). 
+
+The implementation of this was handled using the sklearn library, which not only contains various different versions of SVM classifiers, but also offers tools for Cross validation and more importantly; a parameter grid-search function, which we used to experimentally optimize our parameters.
+
+### Linear Kernel
+We tested our implementation with a linear Kernel and various different C's
+
+![Linear Grid-Search](figures_report/PicLinearFULLV5.png)
+
+The best C we were able to find was C = 0.1 and gave us a total test score of: 0.9472, while giving a mean accuracy value after cross validation of: 0.9405
+Specially apparent here was the close correlation between the amount of training data given and the C-value that netted the best result - the more data we give the classifier, the more weigh we need to give the errors.
+
+### RBF Kernel
+We tested our implementation with a RBF Kernel and various different C's and Gamma's.
+
+![RBF Grid-Search](figures_report/PicRBF20k2kV4.png)
+
+The best combination of C and Gamma we were able to find was: C = 1.5 / gamma = 0.03 and gave us a total test score of: 0.98265, while giving a mean accuracy value after cross validation of: 0.9852
+
+Unfortunately we were unable to run the grid-search on the whole dataset, and used only 20,000 training images on a set of 2000 test images during this stage of the experiment. This will impact our final result here because we probably didn't optimally weigh the errors in our full training set of 60,000 images. 
+
+This was done due to the absolutely unreasonable (and therefore unknown) amount of time it takes to perform a 2D grid-search on the full dataset with our implementation, by reducing the dataset we were then able to test a bunch of parameter-ranges for the final implementation on the full dataset.
 
 ## MLP: Multilayer perceptron
 ### Introduction

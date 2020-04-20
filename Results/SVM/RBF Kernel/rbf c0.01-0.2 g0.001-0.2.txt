@@ -1,0 +1,20 @@
+"C:\T O O L S\sciencetools\Anaconda\python.exe" "C:/U N I B E/MasterJ1/year 2/Patrec/exercises/02_MNIST/SMV/sndbx.py"
+start importing training data... done importing training data
+start importing testing data... done importing testing
+shape train: (10000, 784)
+shape test: (1000, 784)
+
+Best Parameters: {'C': 0.2, 'gamma': 0.05075}
+
+[{'C': 0.01, 'gamma': 0.001}, {'C': 0.01, 'gamma': 0.05075}, {'C': 0.01, 'gamma': 0.1005}, {'C': 0.01, 'gamma': 0.15025}, {'C': 0.01, 'gamma': 0.2}, {'C': 0.0575, 'gamma': 0.001}, {'C': 0.0575, 'gamma': 0.05075}, {'C': 0.0575, 'gamma': 0.1005}, {'C': 0.0575, 'gamma': 0.15025}, {'C': 0.0575, 'gamma': 0.2}, {'C': 0.105, 'gamma': 0.001}, {'C': 0.105, 'gamma': 0.05075}, {'C': 0.105, 'gamma': 0.1005}, {'C': 0.105, 'gamma': 0.15025}, {'C': 0.105, 'gamma': 0.2}, {'C': 0.15250000000000002, 'gamma': 0.001}, {'C': 0.15250000000000002, 'gamma': 0.05075}, {'C': 0.15250000000000002, 'gamma': 0.1005}, {'C': 0.15250000000000002, 'gamma': 0.15025}, {'C': 0.15250000000000002, 'gamma': 0.2}, {'C': 0.2, 'gamma': 0.001}, {'C': 0.2, 'gamma': 0.05075}, {'C': 0.2, 'gamma': 0.1005}, {'C': 0.2, 'gamma': 0.15025}, {'C': 0.2, 'gamma': 0.2}]
+
+[0.1127 0.2106 0.1127 0.1127 0.1127 0.7311 0.7625 0.2041 0.1861 0.2064
+ 0.8297 0.86   0.3021 0.1961 0.1781 0.8555 0.8969 0.35   0.2016 0.1856
+ 0.8716 0.9157 0.4078 0.2059 0.1927]
+
+selected model: {'C': 0.2, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 0.05075, 'kernel': 'rbf', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+### score: 0.921
+
+time: 219.7min
+
+Process finished with exit code 0

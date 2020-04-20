@@ -1,0 +1,23 @@
+"C:\T O O L S\sciencetools\Anaconda\python.exe" "C:/U N I B E/MasterJ1/year 2/Patrec/exercises/02_MNIST/SMV/sndbx.py"
+start importing training data... done importing training data
+start importing testing data... done importing testing
+shape train: (15000, 784)
+shape test: (50, 784)
+
+start building SVC... done building SVC
+start fitting... done fitting
+start parameter estimation... done parameter estimation
+Best Parameters:
+ {'C': 0.03111111111111111}
+
+[{'C': 0.01}, {'C': 0.03111111111111111}, {'C': 0.052222222222222225}, {'C': 0.07333333333333333}, {'C': 0.09444444444444444}, {'C': 0.11555555555555555}, {'C': 0.1366666666666667}, {'C': 0.1577777777777778}, {'C': 0.1788888888888889}, {'C': 0.2}]
+
+[0.92566667 0.93093333 0.92973333 0.92926667 0.92933333 0.92833333
+ 0.92793333 0.92733333 0.92606667 0.92526667]
+
+selected model: {'C': 0.03111111111111111, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto_deprecated', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+### score: 0.98
+
+time: 24.6min
+
+Process finished with exit code 0
