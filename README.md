@@ -23,9 +23,9 @@ The implementation of this was handled using the sklearn library, which not only
 ### Linear Kernel
 We tested our implementation with a linear Kernel and various different C's
 
-![Linear Grid-Search](figures_report/PicLinearFULLV5.png)
+![Linear Grid-Search](figures_report/PicLinearFULLV6.png)
 
-The best C we were able to find was C = 0.1 and gave us a total test score of: 0.9472, while giving a mean accuracy value after cross validation of: 0.9405
+The best C we were able to find was C = 0.944 and gave us a total test score of: 0.9471, while giving a mean accuracy value after cross validation of: 0.94055
 Specially apparent here was the close correlation between the amount of training data given and the C-value that netted the best result - the more data we give the classifier, the more weigh we need to give the errors.
 
 ### RBF Kernel
