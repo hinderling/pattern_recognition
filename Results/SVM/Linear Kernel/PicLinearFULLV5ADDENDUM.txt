@@ -1,0 +1,23 @@
+"C:\T O O L S\sciencetools\Anaconda\python.exe" "C:/U N I B E/MasterJ1/year 2/Patrec/exercises/02_MNIST/SMV/sndbx.py"
+Executing SVM Classifier
+start importing training data... done importing training data
+start importing testing data... done importing testing
+
+linear Kernel selected
+chosen C-Parameters [0.05, 0.075, 0.1, 0.125, 0.15]
+60000 Training images were used alongside 10000 Testing images.
+
+start building grid search classifier... done building grid search classifier
+start fitting... done fitting
+
+list of all parameter combinations with their respective score:
+C -  0.05  = score:  0.9403 | C -  0.075  = score:  0.9403166666666667 | C -  0.1  = score:  0.9405833333333333 | C -  0.125  = score:  0.9400666666666667 | C -  0.15  = score:  0.9399166666666666 | 
+Best Parameters: {'C': 0.1}
+
+selected model: {'C': 0.1, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'auto_deprecated', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+
+### score: 0.9472
+
+time: 155.2min
+
+Process finished with exit code 0
