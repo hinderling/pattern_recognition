@@ -37,7 +37,7 @@ The best combination of C and Gamma we were able to find was: C = 1.5 / gamma = 
 
 Unfortunately we were unable to run the grid-search on the whole dataset, and used only 20,000 training images on a set of 2000 test images during this stage of the experiment. This will impact our final result here because we probably didn't optimally weigh the errors in our full training set of 60,000 images. 
 
-This was done due to the absolutely unreasonable (and therefore unknown) amount of time it takes to perform a 2D grid-search on the full dataset with our implementation, by reducing the dataset we were then able to test a bunch of parameter-ranges for the final implementation on the full dataset.
+This was done due to the absolutely unreasonable amount of time it takes to perform a 2D grid-search on the full dataset with our implementation (approximately one hour per datapoint). By reducing the dataset we were then able to test a bunch of parameter-ranges for the final implementation on the full dataset.
 
 ## MLP: Multilayer perceptron
 ### Introduction
