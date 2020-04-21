@@ -23,9 +23,9 @@ The implementation of this was handled using the sklearn library, which not only
 ### Linear Kernel
 We tested our implementation with a linear Kernel and various different C's
 
-![Linear Grid-Search](figures_report/PicLinearFULLV5.png)
+![Linear Grid-Search](figures_report/PicLinearFULLV6.png)
 
-The best C we were able to find was C = 0.1 and gave us a total test score of: 0.9472, while giving a mean accuracy value after cross validation of: 0.9405
+The best C we were able to find was C = 0.944 and gave us a total test score of: 0.9471, while giving a mean accuracy value after cross validation of: 0.94055
 Specially apparent here was the close correlation between the amount of training data given and the C-value that netted the best result - the more data we give the classifier, the more weigh we need to give the errors.
 
 ### RBF Kernel
@@ -37,7 +37,7 @@ The best combination of C and Gamma we were able to find was: C = 1.5 / gamma = 
 
 Unfortunately we were unable to run the grid-search on the whole dataset, and used only 20,000 training images on a set of 2000 test images during this stage of the experiment. This will impact our final result here because we probably didn't optimally weigh the errors in our full training set of 60,000 images. 
 
-This was done due to the absolutely unreasonable (and therefore unknown) amount of time it takes to perform a 2D grid-search on the full dataset with our implementation, by reducing the dataset we were then able to test a bunch of parameter-ranges for the final implementation on the full dataset.
+This was done due to the absolutely unreasonable amount of time it takes to perform a 2D grid-search on the full dataset with our implementation (approximately one hour per datapoint). By reducing the dataset we were then able to test a bunch of parameter-ranges for the final implementation on the full dataset.
 
 ## MLP: Multilayer perceptron
 ### Introduction
